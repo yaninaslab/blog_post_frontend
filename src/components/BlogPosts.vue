@@ -29,7 +29,7 @@ export default {
   created() {
     axios
       .request({
-        url: "http://yanablogposts.ml//api/blog_post",
+        url: `${process.env.VUE_APP_API_URL}/api/blog_post`,
         method: "GET",
       })
       .then((res) => {
