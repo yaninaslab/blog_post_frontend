@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <br />
+    <br />
+    <br />
+    <h1>Blog Posts from Users</h1>
+    <blog-post-form></blog-post-form>
+    <blog-posts></blog-posts>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BlogPostForm from "./components/BlogPostForm.vue";
+import BlogPosts from "./components/BlogPosts.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    BlogPostForm,
+    BlogPosts,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: whitesmoke;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
